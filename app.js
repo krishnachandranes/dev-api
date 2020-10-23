@@ -18,7 +18,7 @@ res.send('Welcome to Edurekas REST API with Node.js Tutorial!!');
 
  
 //PORT ENVIRONMENT VARIABLE
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}..`));
 
 /* Middlewares */
@@ -26,4 +26,4 @@ app.use(bodyParser.json())
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 
-require('./src/api/userController')(app);
+require('./src/controller/userController')(app);
