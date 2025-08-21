@@ -10,7 +10,7 @@ const getUsers = (request, response) => {
 }
 
 const getRoles = (request, response) => {
- db.query('SELECT * FROM role ORDER BY role_id ASC', (error, results) => {
+ db.query('SELECT * FROM role ORDER BY role_id ASC111', (error, results) => {
    if (error) {
      throw error
    }
